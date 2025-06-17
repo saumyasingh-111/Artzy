@@ -26,8 +26,8 @@ body {
 
 /*FOOTER*/
 .f-info-links a{
-text-decoration: none;
-color: #222222;
+text-decoration: none !important;
+color: #222222 !important;
 }
 
 .f-info-links a:hover{
@@ -58,7 +58,7 @@ text-decoration: underline;
 }
 
 /* CARDS*/
-.card{
+.listing-card{
     border:none !important;
     margin-bottom: 2rem;
 }
@@ -115,4 +115,9 @@ text-decoration: underline;
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
 }
