@@ -2,8 +2,8 @@ body{
    font-family: 'Plus Jakarta Sans',sans-serif !important;
    display: flex;
    flex-direction:column ;
-   
-   background-color: #f0f0f0;
+   color: #2E2E2E;
+   background-color: #F2F1EF;
    min-height: 100vh;
 }
 .container{
@@ -82,13 +82,10 @@ text-decoration: underline;
 }
 
 /* CARD EFFECT */
-.card-img-overlay{
-    opacity: 0;
-}
-
-.card-img-overlay:hover{
-    opacity: 0.2;
-    background-color: white;
+.card:hover{
+ transform:scale(1.02);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+ transition: 0.3s ease;
 }
 
 .add-btn{
@@ -158,3 +155,30 @@ a{
       display: flex;
       align-items: center;
     }
+
+    .nav-icon {
+  color: #555;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.nav-icon:hover {
+  color: #EB6E5E;
+  background-color: #f5e9e7;
+  transform: scale(1.05);
+}
+
+.nav-icon::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #EB6E5E;
+  transition: width 0.3s;
+}
+
+.nav-icon:hover::after {
+  width: 100%;
+}
